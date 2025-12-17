@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer of the Month</title>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f4f7fc;
+            margin: 0;
+            padding: 30px;
+            text-align: center;
+            color: #333;
+        }
+
+        h1 {
+            font-size: 32px;
+            color: #2d6cdf;
+            margin-bottom: 20px;
+        }
+
+        .card {
+            width: 60%;
+            margin: auto;
+            background: #ffffff;
+            padding: 25px 30px;
+            border-radius: 14px;
+            box-shadow: 0 5px 18px rgba(0, 0, 0, 0.12);
+        }
+
+        h2 {
+            margin-top: 0;
+            color: #1f4fa3;
+        }
+
+        p {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+
+        a {
+            display: inline-block;
+            margin-top: 25px;
+            text-decoration: none;
+            padding: 10px 18px;
+            background: #2d6cdf;
+            color: white;
+            border-radius: 8px;
+            font-size: 16px;
+            transition: 0.2s;
+        }
+
+        a:hover {
+            background: #1e4da8;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>🥇 Customer of the Month</h1>
+
+    <div class="card">
+        {% if user %}
+            <h2>{{ user.name }}</h2>
+            <p><b>Phone:</b> {{ user.phone }}</p>
+            <p><b>Total Spending:</b> {{ total_spending }}</p>
+            <p><b>Total Visits:</b> {{ visit_count }}</p>
+        {% else %}
+            <p>No users found</p>
+        {% endif %}
+    </div>
+
+    <a href="/">Back to Home</a>
+
+</body>
+
+</html>

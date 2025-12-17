@@ -1,0 +1,127 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Update balance</h2>
+    <form method="POST">
+    <label for="amount">Amount for Add or Deduct</label>
+    <input type="number" step="0.01" name="amount" id="amount" required>
+    <button type="submit" name="action" value="add">Add</button>
+    <button type="submit" name="action" value="deduct">Deduct</button>
+    </form>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Balance</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f3f4f6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            background: white;
+            padding: 30px;
+            width: 350px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        h2 {
+            margin-bottom: 15px;
+            color: #333;
+        }
+
+        label {
+            font-size: 15px;
+            color: #555;
+        }
+
+        input[type="number"] {
+            width: 90%;
+            padding: 10px;
+            margin: 12px 0 20px 0;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            font-size: 16px;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 15px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            margin: 8px;
+        }
+
+        .add-btn {
+            background-color: #4caf50;
+            color: white;
+        }
+
+        .deduct-btn {
+            background-color: #e53935;
+            color: white;
+        }
+
+        button:hover {
+            opacity: 0.85;
+        }
+
+        .highlight {
+            background-color: #fffae6;
+            padding: 10px;
+            border-left: 4px solid #f4c542;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            font-size: 14px;
+            color: #444;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h2>Manage User Balance</h2>
+
+        <div class="highlight">
+            Add or Deduct money from {{user.name}}'s account.
+        </div>
+
+        <form method="POST">
+            <label for="amount">Enter Amount</label><br>
+            <input type="number" step="0.01" name="amount" id="amount" required>
+            <label>Discount Code (optional):</label>
+            <input type="text" name="discount_code" placeholder="Enter OFF30%">
+            <div>
+                <button type="submit" name="action" value="add" class="add-btn">Add Money</button>
+                <button type="submit" name="action" value="deduct" class="deduct-btn">Deduct Money</button>
+            </div>
+
+        </form>
+
+    </div>
+
+</body>
+
+</html>

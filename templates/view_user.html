@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Data</title>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f4f7fc;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+
+        .table-container {
+            width: 60%;
+            margin: auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th {
+            background: #4a90e2;
+            color: white;
+            padding: 12px 8px;
+        }
+
+        td {
+            padding: 10px 8px;
+            border-bottom: 1px solid #ddd;
+            text-align: center;
+        }
+
+        tr:hover {
+            background: #f1f6ff;
+        }
+
+        a {
+            color: #4a90e2;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        p {
+            text-align: center;
+            margin-top: 25px;
+            font-size: 17px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>User Data</h2>
+
+    <div class="table-container">
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Phone</th>
+                <th>Balance</th>
+                <th>Transaction History</th>
+            </tr>
+
+            {% for u in users %}
+            <tr>
+                <td>{{u.name}}</td>
+                <td>{{u.phone}}</td>
+                <td>{{u.balance}}</td>
+                <td><a href="/transactions/{{u.phone}}">All transactions for {{u.name}}</a></td>
+            </tr>
+            {% endfor %}
+        </table>
+    </div>
+
+    <p>
+        To get the customer of the Year  
+        <a href="/customer-of-month">Click Here!</a>
+    </p>
+
+</body>
+</html>

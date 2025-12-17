@@ -1,0 +1,33 @@
+# =========================
+# Virtual Environments
+# =========================
+cash_register_env/
+venv/
+env/
+.venv/
+
+# =========================
+# Python cache / compiled files
+# =========================
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# =========================
+# Environment variables
+# =========================
+.env
+
+# =========================
+# OS / Editor files
+# =========================
+.DS_Store
+Thumbs.db
+.vscode/
+
+# =========================
+# Flask / Python misc
+# =========================
+instance/
+*.log
