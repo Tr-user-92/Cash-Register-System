@@ -2,8 +2,8 @@
     {
         "name": "Trisa",
         "phone": "7698793550",
-        "balance": 880.0,
-        "last_transaction": "2025-12-08 14:34:04",
+        "balance": 4700.0,
+        "last_transaction": "2025-12-18 18:53:10",
         "transaction_history": [
             {
                 "type": "deposite",
@@ -22,6 +22,24 @@
                 "amount": 119.0,
                 "time": "2025-12-08 14:34:04",
                 "balance_after": 880.0
+            },
+            {
+                "type": "deposite",
+                "amount": 5000.0,
+                "gst": 0,
+                "final_amount": 5000.0,
+                "time": "2025-12-18 18:52:50",
+                "balance_after": 5880.0,
+                "discount_code": ""
+            },
+            {
+                "type": "withdraw",
+                "amount": 1000.0,
+                "gst": 180.0,
+                "final_amount": 1180.0,
+                "time": "2025-12-18 18:53:10",
+                "balance_after": 4700.0,
+                "discount_code": ""
             }
         ]
     },
@@ -57,7 +75,7 @@
             },
             {
                 "type": "deposite",
-                "base_amount": 1000.0,
+                "amount": 1000.0,
                 "gst": 0,
                 "final_amount": 1000.0,
                 "time": "2025-12-11 18:24:01",
@@ -66,7 +84,7 @@
             },
             {
                 "type": "withdraw",
-                "base_amount": 70.0,
+                "amount": 70.0,
                 "gst": 18.0,
                 "final_amount": 88.0,
                 "time": "2025-12-11 18:25:13",
@@ -75,7 +93,7 @@
             },
             {
                 "type": "withdraw",
-                "base_amount": 70.0,
+                "amount": 70.0,
                 "gst": 18.0,
                 "final_amount": 88.0,
                 "time": "2025-12-11 22:32:36",
@@ -87,8 +105,8 @@
     {
         "name": "Ayush",
         "phone": "1111111111",
-        "balance": 1337.0,
-        "last_transaction": "2025-12-10 15:21:43",
+        "balance": 983.0,
+        "last_transaction": "2025-12-18 19:35:43",
         "transaction_history": [
             {
                 "type": "deposite",
@@ -140,17 +158,33 @@
             },
             {
                 "type": "withdraw",
-                "base_amount": 90.0,
+                "amount": 90.0,
                 "gst": 18.0,
                 "final_amount": 108.0,
                 "time": "2025-12-10 15:21:43",
                 "balance_after": 1337.0
+            },
+            {
+                "type": "withdraw",
+                "amount": 300.0,
+                "gst": 54.0,
+                "final_amount": 354.0,
+                "time": "2025-12-18 19:35:43",
+                "balance_after": 983.0,
+                "discount_code": ""
             }
         ]
     },
     {
         "name": "Rohan",
         "phone": "2222222222",
+        "balance": 100,
+        "last_transaction": "no transaction yet",
+        "transaction_history": []
+    },
+    {
+        "name": "Rishi",
+        "phone": "3333333333",
         "balance": 100,
         "last_transaction": "no transaction yet",
         "transaction_history": []

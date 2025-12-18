@@ -5,6 +5,7 @@ cash_register_env/
 venv/
 env/
 .venv/
+data/
 
 # =========================
 # Python cache / compiled files
